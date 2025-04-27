@@ -6,16 +6,20 @@
   <title>Matt Gio Regis - Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #ffffff, #f0f4f8);
       color: #333;
       margin: 0;
       padding: 0 1rem;
+      scroll-behavior: smooth;
     }
+
     header {
       text-align: center;
       padding: 2rem 0;
+      border-bottom: 1px solid #ccc;
     }
+
     header img {
       width: 150px;
       height: 150px;
@@ -33,11 +37,14 @@
       margin-top: 2rem;
       margin-bottom: 1rem;
     }
-    .projects, .contact, .socials, .resume {
-      max-width: 800px;
-      margin: auto;
-      padding: 1rem 0;
+    .project, .contact, .socials, .resume, .cv {
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
     }
+
     .project {
       border: 1px solid #ccc;
       border-radius: 10px;
@@ -53,26 +60,67 @@
       border-radius: 8px;
     }
     .contact-form button {
-      padding: 0.5rem 1rem;
+      padding: 0.75rem 1.5rem;
       background-color: #007bff;
       color: white;
       border: none;
       border-radius: 8px;
       cursor: pointer;
+      transition: background-color 0.3s ease;
     }
+    .contact-form button:hover {
+      background-color: #0056b3;
+    }
+
     .socials a {
       margin-right: 1rem;
       color: #007bff;
       text-decoration: none;
     }
+    .about {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-align: center;
+}
+.about p {
+  margin-bottom: 1rem;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInMove 1.5s ease forwards;
+}
+
+@keyframes fadeInMove {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
   </style>
 </head>
 <body>
   <header>
     <img src="gradpic.jpg" alt="Matt Gio Regis Photo" />
     <h1>Matt Gio Regis</h1>
-    <p>Aspiring professional passionate about technology, creativity, and making an impact.</p>
+    <div class="about fade-in">
+      <p>Ever since I was a kid, I’ve always just loved playing, whether it was running around outside, getting into random games with friends, or spending hours on video games. I guess I’ve always just enjoyed the fun, the challenge, and the memories that come with it. And honestly, that part of me never changed.</p>
+    
+      <p>As I got older, I got into computers and gaming even more, and somewhere along the way, I fell in love with music too. Playing the guitar became something I could just lose myself in, a way to chill and express myself. And then there are bikes—man, there’s just something about them that feels like pure freedom. One day, I know I’ll have my own sports bike, and when that day comes, it’s gonna feel unreal.</p>
+    
+      <p>But no matter what, family always comes first for me. They’re my biggest motivation, the reason I want to succeed. For me, success isn’t just about having nice things—it’s about being able to take care of the people I love, making sure they’re happy, and living life without regrets. I know I’ve got a long way to go, but I’m ready for it. Whether it’s through gaming, music, or chasing my dreams, I’ll keep pushing forward. And one day, I’ll be out there, riding that dream bike, knowing that everything I worked for was worth it.</p>
+    </div>
   </header>
+
+  <!-- Link to CV Section -->
+  <section class="cv">
+    <h2>Curriculum Vitae</h2>
+    <p>If you'd like to view my full CV, click the link below:</p>
+    <a href="cv.html" target="_blank" style="display: inline-block; background-color: #007bff; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 8px; text-align: center;">View My CV</a>
+  </section>
 
   <section class="projects">
     <h2>Projects</h2>
@@ -86,16 +134,11 @@
     </div>
   </section>
 
-  <section class="resume">
-    <h2>Resume</h2>
-    <a href="resume.pdf" target="_blank">Download My Resume</a>
-  </section>
-
   <section class="socials">
     <h2>Connect With Me</h2>
-    <a href="mailto:your.email@example.com">Email</a>
-    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+    <a href="mailto:mattgioregis@gmail.com">Email</a>
+    <a href="https://www.linkedin.com/in/matt-gio-s-regis-35078334b/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/MATJIYO" target="_blank">GitHub</a>
   </section>
 
   <section class="contact">
